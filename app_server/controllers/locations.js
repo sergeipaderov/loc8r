@@ -7,7 +7,7 @@ module.exports.homelist = function(req, res) {
 /* Get Location info */
 
 module.exports.locationInfo = function(req, res) {
-    res.render('index', {title: 'Location info'});
+    res.render('location-info', {title: 'Location info'});
 };
 
 /* Get Add review */
