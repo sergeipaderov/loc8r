@@ -1,10 +1,6 @@
 extends layout
 
-mixin outputRating(rating)
-  - for (var i = 1; i <= rating; i++)
-    span.glyphicon.glyphicon-star
-  - for (i = rating; i < 5; i++)
-    span.glyphicon.glyphicon-star-empty
+include _includes/sharedHTMLfunctions
 
 block content
   #banner.page-header
@@ -22,7 +18,7 @@ block content
             small &nbsp;
             +outputRating(location.rating)
             span.badge.pull-right.badge-default= location.distance
-          p.address= location.adress
+          p.address= location.address
           p
           each facility in location.facilities
             span.label.label-warning= facility
