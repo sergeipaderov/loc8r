@@ -66,8 +66,8 @@ module.exports.locationInfo = function(req, res) {
             }],
             reviews: [{
                 author: ' Simon Holmes',
-                rating: 3,
-                timestamp: ' 16 June 2013',
+                rating: 5,
+                timestamp: ' 16 Jul 2013',
                 reviewText: 'What a great place. I can\'t say enough good things about it.'
                 },{
                 author: ' Charlie Chaplin',
