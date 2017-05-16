@@ -1,3 +1,11 @@
+var request = require('request');
+var apiOptions = {
+    server : "http://localhost:3000"
+};
+if (process.env.NODE_ENV === 'production') {
+    apiOptions.server = "https://sleepy-taiga-18602.herokuapp.com";
+}
+
 /* Get home page */
 
 module.exports.homelist = function(req, res) {
